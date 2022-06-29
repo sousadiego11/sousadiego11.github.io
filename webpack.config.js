@@ -1,9 +1,8 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
-const mode = process.env.NODE_ENV === 'production' ? 'production' : 'development'
 
-module.exports = {
-    mode,
+module.exports = (env) => ({
+    mode: env.production ? 'production' : 'development',
     entry: path.resolve(__dirname, 'src/index.jsx'),
 
     output: {
@@ -56,5 +55,7 @@ module.exports = {
             template: path.resolve(__dirname, 'src/public/index.html'),
             favicon: path.resolve(__dirname, 'src/public/favicon.ico')
         })
-    ]
-}
+    ],
+
+	 devtool: 'source-map'
+})
