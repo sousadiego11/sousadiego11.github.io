@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://sousadiego11.github.io/portfolio.github.io/",
   "scripts": {
     "build": "webpack --env production",
-    "start": "webpack serve"
+    "start": "webpack serve",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +29,7 @@
     "webpack-cli": "^4.10.0"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "webpack-dev-server": "^4.9.2"
   }
