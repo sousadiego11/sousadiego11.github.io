@@ -1,4 +1,5 @@
 import React from "react"
+import '../styles/cover.css'
 
 export function Instagram (props) {
   return (<svg
