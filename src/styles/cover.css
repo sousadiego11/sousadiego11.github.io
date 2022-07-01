@@ -1,0 +1,47 @@
+.cover {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 100vw;
+	height: 100vh;
+}
+
+.content {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+}
+
+.title {
+	width: 393px;
+	height: 144px;
+	font-size: 96px;
+	font-weight: 300;
+	line-height: 144px;
+	margin-bottom: 0;
+
+	background: linear-gradient(220.09deg, #FF5FE5 -26.57%, #0037FA 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+.description {
+	width: 596px;
+	height: 144px;
+	font-size: 48px;
+	font-weight: 275;
+	line-height: 72px;
+	margin: 0;
+
+	color: #FAFCFC;
+}
+
+.icons {
+	margin-top: 30%;
+}
+
+.icon {
+	margin-right: 24px;
+	color: #FAFCFC;
+}

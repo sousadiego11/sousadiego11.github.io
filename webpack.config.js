@@ -18,31 +18,36 @@ module.exports = (env) => ({
 
     module: {
         rules: [
-            {
-                test: /.jsx?$/i,
-                include: [ path.resolve(__dirname, 'src') ],
-                exclude: [ path.resolve(__dirname, 'node_modules') ],
-                loader: 'babel-loader',
-                options: {
-                    presets: ['@babel/preset-react', '@babel/preset-env']
-                }
-            },
-            {
-                test: /\.s?css$/i,
-                use: ['style-loader', 'css-loader', 'sass-loader'],
-            },
-            {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+			{
+				test: /.jsx?$/i,
+				include: [ path.resolve(__dirname, 'src') ],
+				exclude: [ path.resolve(__dirname, 'node_modules') ],
+				loader: 'babel-loader',
+				options: {
+					presets: ['@babel/preset-react', '@babel/preset-env']
+				}
+			},
+			{
+				test: /\.s?css$/i,
+				use: ['style-loader', 'css-loader', 'sass-loader'],
+			},
+			{
+				test: /\.(png|svg|jpg|jpeg|gif)$/i,
 				type: 'asset/resource'
-            },
-            {
-                test: /\.ico/,
-                type: 'asset/resource',
-                generator: {
-                  filename: 'static/[hash][ext][query]'
-                }
-              }
-        ]
+			},
+			{
+				test: /\.ico/,
+				type: 'asset/resource',
+				generator: {
+					filename: 'static/[hash][ext][query]'
+				}
+			},
+			{
+				test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
+				include: [path.resolve(__dirname, "src")],
+				loader: "file-loader"
+			}
+      ]
     },
 
     resolve: {
