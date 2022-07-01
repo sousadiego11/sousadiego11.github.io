@@ -44,4 +44,11 @@
 .icon {
 	margin-right: 24px;
 	color: #FAFCFC;
+	
+	cursor: pointer;
+	transition: transform 0.5s ease-in-out;
+}
+
+.icon:hover {
+	transform: scale(1.2, 1.2);
 }
