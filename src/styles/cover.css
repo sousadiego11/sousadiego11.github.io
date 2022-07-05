@@ -52,3 +52,28 @@
 .icon:hover {
 	transform: scale(1.2, 1.2);
 }
+
+@media only screen and (max-width: 800px) {
+	.cover {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 200vh;
+		height: 200vh;
+
+		position: absolute;
+		right: -700px;
+	}
+
+	.icons {
+		margin-left: 20%;
+		margin-top: 58% !important;
+	}
+
+	.icon {
+		transform: scale(1.4, 1.4);
+		margin-right: 90px !important;
+	}
+
+	.title {}
+}
