@@ -55,25 +55,26 @@
 
 @media only screen and (max-width: 800px) {
 	.cover {
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		width: 200vh;
-		height: 200vh;
+		width: 100vh;
+		height: 100vh;
 
 		position: absolute;
-		right: -700px;
+		right: -190px;
 	}
 
 	.icons {
-		margin-left: 20%;
-		margin-top: 58% !important;
+		margin-left: 15%;
+		margin-top: 25% !important;
 	}
 
-	.icon {
-		transform: scale(1.4, 1.4);
-		margin-right: 90px !important;
+	.title {
+		font-size: 70px;
+		margin: 0;
 	}
 
-	.title {}
+	.description {
+		font-size: 24px;
+		width: 80%;
+		line-height: 36px;
+	}
 }
